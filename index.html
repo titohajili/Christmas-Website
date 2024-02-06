@@ -13,12 +13,61 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive christmas website - Bedimcode</title>
+      <title>Responsive Christmas Website</title>
+      <script src="assets/js/main.js" defer></script>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <span>Merry</span>
+               <span>Christmas</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link active-link">
+                        <span>01</span> Home
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <span>02</span> Card
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <span>03</span> Contact Us
+                     </a>
+                  </li>
+               </ul>
+
+               <div class="nav__buttons">
+                  <div class="nav__notification">
+                     <img src="assets/img/bell.png" alt="image" class="nav__bell">
+                     <div class="nav__circle">2</div>
+                  </div>
+
+                  <a href="#" class="button button__dark">Send a Card</a>
+               </div>
+
+               <!-- Close button -->
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!--Toggle button-->
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-apps-2-line"></i>
+            </div>
+         </nav>
       </header>
 
       <!--==================== MAIN ====================-->
