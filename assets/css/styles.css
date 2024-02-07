@@ -85,7 +85,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--first-color-dark);
+  background-color: transparent;
   z-index: var(--z-fixed);
 }
 
@@ -252,4 +252,104 @@ img {
 
   .button__dark:hover{
     background-color: var(--first-color-darker);
+  }
+
+  /* ==========home======== */
+
+  .home{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+
+  }
+
+  .home__container{
+    position: relative;
+    padding-block: 5.5rem 3rem;
+    display: grid;
+    row-gap: 6rem;
+  }
+
+  .home__img{
+    width: 400px;
+    transform: scale(1.2);
+    transform-origin: top;
+    justify-self: center;
+  }
+
+  .home__data{
+    text-align: center;
+  }
+
+  .home__title{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+    margin-bottom: 1rem;
+  }
+
+  .home__number,
+  .home__text{
+    display: inline-grid;
+  }
+
+  .home__number{
+    position: relative;
+    place-items: center;
+    margin-left: .75rem;
+    width: 44px;
+    height: 44px;
+    background-color: var(--first-color-darker);
+    border-radius: 50%;
+    font-size: var(--h2-font-size);
+    transform: translateY(-4px);
+  }
+
+  .home__number::after{
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: 10px solid var(--first-color);
+    border-right-color: transparent;
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform: rotate(45deg);
+  }
+
+  .home__description{
+    margin-bottom: 2rem;
+    color: var(--title-color);
+  }
+
+  .home__bell,
+  .home__star{
+    position: absolute;
+
+  }
+
+  .home__bell{
+    width: 50px;
+    top: 14rem;
+    right: -1.25rem;
+    transform: rotate(30deg);
+  }
+
+  .home__star{
+    width: 60px;
+    bottom: 17rem;
+    left: -3rem;
+    transform: rotate(30deg);
+  }
+
+  .home__blob{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: var(--first-color-dark);
+    border-radius: 4rem;
+    transform: rotate(45deg);
+    left: -23rem;
+    top: 6rem;
+    z-index: -1;
   }
