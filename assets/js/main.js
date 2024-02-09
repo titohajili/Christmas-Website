@@ -94,6 +94,14 @@ const  navClose = document.getElementById('nav-close');
             msgChristmas.innerHTML = 'Today is Dec 25, Merry Christmas'
         }
 
+        //Show remaining days & remove Christmas message 
+
+        if (currentMonth == 12 && currentDay == 26) {
+          titleData.style.display = 'block'
+          msgChristmas.style.display = 'none'
+      }
+
+
       };
       
       
